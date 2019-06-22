@@ -2,7 +2,7 @@ $(document).ready(onReady);
 
 function onReady() {
     $('#add-employee-information').on('click', addItem);
-    $('#delete').on('click', deleteButton);
+    $('#employeeInfoOut').on('click', '.delete', deleteButton);
 }
 
 let salaryInventory = [];
@@ -57,4 +57,6 @@ function displayInfo(Information){
 }
 
 
-//function 
+function deleteButton(click){
+    $(this).closest('tr').remove();
+}
