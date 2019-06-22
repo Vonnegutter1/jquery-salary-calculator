@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="jquery.js"></script>
     <script src="client.js"></script>
-    <script src="style.css"></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.min.css">
 
     <title>jQuery Salary Calculator</title>
@@ -22,16 +22,14 @@
                     <input class="removeAll" id="firstName" placeholder="First Name" type="text" />
                     <input class="removeAll" id="lastName" placeholder="Last Name" type="text" />
                     <input class="removeAll" id="ID" placeholder="ID" type="number" />
-                    <input class="removeAll" id="jobTitle" placeholder="Job Title" type="text" />
+                    <input class="removeAll" id="title" placeholder="Title" type="text" />
                     <input class="removeAll" id="annualSalary" placeholder="Annual Salary" type="number" />
                     <button class="removeAll" id="add-employee-information">Submit</button>
                 
 
                 <h3>All Employees</h3>
-                <button id="clear-all">Remove All</button>
-                <table> id="employee-list">
-                    <!--jQuery will fill this in as we add employee!!!-->
-                </table>
+               
+               
             </section>
             <section>
                 <table class="employeeTable">
@@ -55,6 +53,9 @@
                     </tbody>
                 </table>
             </section>
+            <div>
+                <h4>Total Monthly Salary: <span id="background"></span></h4>
+            </div>
 
     </main>   
 </body>
